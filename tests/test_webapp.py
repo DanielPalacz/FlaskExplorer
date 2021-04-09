@@ -11,13 +11,7 @@ class TestWebApp(unittest.TestCase):
         self.client = app.test_client()
         # what is going on here? why I dont need to run app (app.run) and still... be able to send http reqs
         #
-        # step by step:
-        # 1. response.status_code ---> from app.webapp import app
-        # --- then from global namespace in webapp we are really running "app = flask.Flask(__name__)"
-        #
-        # ... but when we triggered http server?? we dont run app.run
-        # we did not...
-        # but app.test_client()
+        # Thread-Locals in Flask???
 
     def test_db_users(self):
         from app.webapp import db_users

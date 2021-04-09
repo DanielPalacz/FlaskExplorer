@@ -12,7 +12,12 @@ app.config['BASIC_AUTH_USERNAME'] = "daniel"
 app.config['BASIC_AUTH_PASSWORD'] = "1234"
 basic_auth = BasicAuth(app)
 
-db_users = dict()
+
+local_db = dict(
+    sessions={},
+    users={},
+    documents={}
+)
 
 
 @app.route("/", methods=["GET"])
@@ -22,11 +27,18 @@ def root_view():
 
 
 @app.route("/session", methods=["POST"])
-@basic_auth.required
 def create_session():
     # here we are forcing cookie creation by Flask app
     flask.session["a_value"] = uuid.uuid4()
     return flask.jsonify("Session_created")
+
+
+@app.route("/session", methods=["GET"])
+def get_session():
+    flask.session["session_id"] = str(uuid.uuid4())
+    if not flask.session:
+        return flask.abort(404)
+    return flask.jsonify("get session")
 
 
 if __name__ == "__main__":
