@@ -1,9 +1,7 @@
 import flask
 from flask_basicauth import BasicAuth
-from requests.auth import _basic_auth_str
 
 import uuid
-
 
 app = flask.Flask(__name__)
 
@@ -27,36 +25,45 @@ def root_view():
 
 
 @app.route("/session", methods=["POST"])
+@basic_auth.required
 def create_session():
     # here we are forcing cookie creation by Flask app
     flask.session["a_value"] = uuid.uuid4()
+    # print("The body of the given http POST requests:")
+    # print(flask.request.get_data())
     return flask.jsonify("Session_created")
 
 
 @app.route("/session", methods=["GET"])
+@basic_auth.required
 def get_session():
     flask.session["session_id"] = str(uuid.uuid4())
     if not flask.session:
         return flask.abort(404)
-    return flask.jsonify("get session")
+    return flask.jsonify("Get session endpoint")
 
 
 if __name__ == "__main__":
-    #
-    # curl -u daniel:1234 -i -X POST http://127.0.0.1:5000/session -vv
-    #
-    app.run(debug=True, use_reloader=True)
-    #
-    # client = app.test_client()
-    # print(app.config)
-    # r_root = client.get("/")
+    run_app_mode = True
 
-    # username = "daniel"
-    # password = "1234"
-    # r_session = client.post("/session", headers={"Authorization": _basic_auth_str(username, password)})
+    if run_app_mode:
+        app.run(debug=True, use_reloader=True, port=7777)
+        # print(app.config)
+    else:
+        import base64
 
-    # r_generic = client.open("/session", method="POST", headers={"Authorization": _basic_auth_str(username, password)})
-    # print(r_generic.status_code)
+        def enc_auth(u, p):
+            return "Basic %s" % base64.b64encode(":".join([u, p]).encode()).decode()
 
-    # print(r_session.status_code)
-    # print(r_session.headers)
+        username = "daniel"
+        password = "1234"
+        # telnet 127.0.0.1 7777
+        # curl -u daniel:1234 -i -X POST http://127.0.0.1:7777/session -vv
+        # curl -i -X GET -H "Cookie: session=........" http://127.0.0.1:7777/session -vv
+        # curl -u daniel:1234 -i -X POST --data title=Hello http://127.0.0.1:7777/session -vv
+
+        client = app.test_client()
+        encoded = enc_auth(username, password)
+        r_session = client.post("/session", headers={"Authorization": encoded})
+        r_generic = client.open("/session", method="POST", headers={"Authorization": encoded})
+
