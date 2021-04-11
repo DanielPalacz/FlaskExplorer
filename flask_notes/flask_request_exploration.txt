@@ -1,0 +1,782 @@
+(project_env) danielp@danielp-OptiPlex-790:~/PythonProjects/FlaskExplorer$ curl -u daniel:1234 -i -X POST --data "title=Hello" http://127.0.0.1:7777/session -vv 
+
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:7777...
+* TCP_NODELAY set
+* Connected to 127.0.0.1 (127.0.0.1) port 7777 (#0)
+* Server auth using Basic with user 'daniel'
+> POST /session HTTP/1.1
+> Host: 127.0.0.1:7777
+> Authorization: Basic ZGFuaWVsOjEyMzQ=
+> User-Agent: curl/7.68.0
+> Accept: */*
+> Content-Length: 11
+> Content-Type: application/x-www-form-urlencoded
+> 
+* upload completely sent off: 11 out of 11 bytes
+* Mark bundle as not supporting multiuse
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+HTTP/1.0 200 OK
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 18
+Content-Length: 18
+< Vary: Cookie
+Vary: Cookie
+< Set-Cookie: session=eyJhX3ZhbHVlIjp7IiB1IjoiZDdhOTA5ZDRkMDRkNDRmNjgzY2YyY2ZkMDUwNDc0NGUifX0.YHKpmg.U4NL7BB5UhBPPM6i0e_atSTfn3o; HttpOnly; Path=/
+Set-Cookie: session=eyJhX3ZhbHVlIjp7IiB1IjoiZDdhOTA5ZDRkMDRkNDRmNjgzY2YyY2ZkMDUwNDc0NGUifX0.YHKpmg.U4NL7BB5UhBPPM6i0e_atSTfn3o; HttpOnly; Path=/
+< Server: Werkzeug/1.0.1 Python/3.8.5
+Server: Werkzeug/1.0.1 Python/3.8.5
+< Date: Sun, 11 Apr 2021 07:47:38 GMT
+Date: Sun, 11 Apr 2021 07:47:38 GMT
+
+< 
+"Session_created"
+* Closing connection 0
+(project_env)
+
+
+--------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- 
+--------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- 
+
+
+-------------------------------------------------------------------
+flask.request.accept_charsets
+-- Object type: <class 'werkzeug.datastructures.CharsetAccept'>
+-- Callable? False
+
+print(flask.request.accept_charsets)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.accept_encodings
+-- Object type: <class 'werkzeug.datastructures.Accept'>
+-- Callable? False
+
+print(flask.request.accept_encodings)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.accept_languages
+-- Object type: <class 'werkzeug.datastructures.LanguageAccept'>
+-- Callable? False
+
+print(flask.request.accept_languages)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.accept_mimetypes
+-- Object type: <class 'werkzeug.datastructures.MIMEAccept'>
+-- Callable? False
+
+print(flask.request.accept_mimetypes)
+*/*
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.access_control_request_headers
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.access_control_request_headers)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.access_control_request_method
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.access_control_request_method)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.access_route
+-- Object type: <class 'werkzeug.datastructures.ImmutableList'>
+-- Callable? False
+
+print(flask.request.access_route)
+ImmutableList(['127.0.0.1'])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.application
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.application():
+The given command was not called:  flask.request.application
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.args
+-- Object type: <class 'werkzeug.datastructures.ImmutableMultiDict'>
+-- Callable? False
+
+print(flask.request.args)
+ImmutableMultiDict([])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.authorization
+-- Object type: <class 'werkzeug.datastructures.Authorization'>
+-- Callable? False
+
+print(flask.request.authorization)
+{'username': 'daniel', 'password': '1234'}
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.base_url
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.base_url)
+http://127.0.0.1:7777/session
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.blueprint
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.blueprint)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.cache_control
+-- Object type: <class 'werkzeug.datastructures.RequestCacheControl'>
+-- Callable? False
+
+print(flask.request.cache_control)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.charset
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.charset)
+utf-8
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.close
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.close():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.content_encoding
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.content_encoding)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.content_length
+-- Object type: <class 'int'>
+-- Callable? False
+
+print(flask.request.content_length)
+11
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.content_md5
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.content_md5)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.content_type
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.content_type)
+application/x-www-form-urlencoded
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.cookies
+-- Object type: <class 'werkzeug.datastructures.ImmutableMultiDict'>
+-- Callable? False
+
+print(flask.request.cookies)
+ImmutableMultiDict([])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.data
+-- Object type: <class 'bytes'>
+-- Callable? False
+
+print(flask.request.data)
+b''
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.date
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.date)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.dict_storage_class
+-- Object type: <class 'type'>
+-- Callable? True
+
+flask.request.dict_storage_class():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.disable_data_descriptor
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.disable_data_descriptor)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.encoding_errors
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.encoding_errors)
+replace
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.endpoint
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.endpoint)
+create_session
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.environ
+-- Object type: <class 'dict'>
+-- Callable? False
+
+print(flask.request.environ)
+{'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=5>, 'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'werkzeug.server.shutdown': <function WSGIRequestHandler.make_environ.<locals>.shutdown_server at 0x7f6cee06a3a0>, 'SERVER_SOFTWARE': 'Werkzeug/1.0.1', 'REQUEST_METHOD': 'POST', 'SCRIPT_NAME': '', 'PATH_INFO': '/session', 'QUERY_STRING': '', 'REQUEST_URI': '/session', 'RAW_URI': '/session', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': 42400, 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '7777', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTP_HOST': '127.0.0.1:7777', 'HTTP_AUTHORIZATION': 'Basic ZGFuaWVsOjEyMzQ=', 'HTTP_USER_AGENT': 'curl/7.68.0', 'HTTP_ACCEPT': '*/*', 'CONTENT_LENGTH': '11', 'CONTENT_TYPE': 'application/x-www-form-urlencoded', 'werkzeug.request': <Request 'http://127.0.0.1:7777/session' [POST]>}
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.files
+-- Object type: <class 'werkzeug.datastructures.attach_enctype_error_multidict.<locals>.newcls'>
+-- Callable? False
+
+print(flask.request.files)
+ImmutableMultiDict([])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.form
+-- Object type: <class 'werkzeug.datastructures.ImmutableMultiDict'>
+-- Callable? False
+
+print(flask.request.form)
+ImmutableMultiDict([('title', 'Hello')])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.form_data_parser_class
+-- Object type: <class 'type'>
+-- Callable? True
+
+flask.request.form_data_parser_class():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.from_values
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.from_values():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.full_path
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.full_path)
+/session?
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.get_data
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.get_data():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.get_json
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.get_json():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.headers
+-- Object type: <class 'werkzeug.datastructures.EnvironHeaders'>
+-- Callable? False
+
+print(flask.request.headers)
+Host: 127.0.0.1:7777
+Authorization: Basic ZGFuaWVsOjEyMzQ=
+User-Agent: curl/7.68.0
+Accept: */*
+Content-Length: 11
+Content-Type: application/x-www-form-urlencoded
+
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.host
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.host)
+127.0.0.1:7777
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.host_url
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.host_url)
+http://127.0.0.1:7777/
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.if_match
+-- Object type: <class 'werkzeug.datastructures.ETags'>
+-- Callable? True
+
+flask.request.if_match():
+The given command was not called:  flask.request.if_match
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.if_modified_since
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.if_modified_since)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.if_none_match
+-- Object type: <class 'werkzeug.datastructures.ETags'>
+-- Callable? True
+
+flask.request.if_none_match():
+The given command was not called:  flask.request.if_none_match
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.if_range
+-- Object type: <class 'werkzeug.datastructures.IfRange'>
+-- Callable? False
+
+print(flask.request.if_range)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.if_unmodified_since
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.if_unmodified_since)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.input_stream
+-- Object type: <class '_io.BufferedReader'>
+-- Callable? False
+
+print(flask.request.input_stream)
+<_io.BufferedReader name=5>
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.is_json
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.is_json)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.is_multiprocess
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.is_multiprocess)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.is_multithread
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.is_multithread)
+True
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.is_run_once
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.is_run_once)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.is_secure
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.is_secure)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.json
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.json)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.json_module
+-- Object type: <class 'module'>
+-- Callable? False
+
+print(flask.request.json_module)
+<module 'flask.json' from '/home/danielp/PythonProjects/FlaskExplorer/project_env/lib/python3.8/site-packages/flask/json/__init__.py'>
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.list_storage_class
+-- Object type: <class 'type'>
+-- Callable? True
+
+flask.request.list_storage_class():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.make_form_data_parser
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.make_form_data_parser():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.max_content_length
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.max_content_length)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.max_form_memory_size
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.max_form_memory_size)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.max_forwards
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.max_forwards)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.method
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.method)
+POST
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.mimetype
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.mimetype)
+application/x-www-form-urlencoded
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.mimetype_params
+-- Object type: <class 'dict'>
+-- Callable? False
+
+print(flask.request.mimetype_params)
+{}
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.on_json_loading_failed
+-- Object type: <class 'method'>
+-- Callable? True
+
+flask.request.on_json_loading_failed():
+The given command was not called:  flask.request.on_json_loading_failed
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.origin
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.origin)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.parameter_storage_class
+-- Object type: <class 'type'>
+-- Callable? True
+
+flask.request.parameter_storage_class():
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.path
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.path)
+/session
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.pragma
+-- Object type: <class 'werkzeug.datastructures.HeaderSet'>
+-- Callable? False
+
+print(flask.request.pragma)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.query_string
+-- Object type: <class 'bytes'>
+-- Callable? False
+
+print(flask.request.query_string)
+b''
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.range
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.range)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.referrer
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.referrer)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.remote_addr
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.remote_addr)
+127.0.0.1
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.remote_user
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.remote_user)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.routing_exception
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.routing_exception)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.scheme
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.scheme)
+http
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.script_root
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.script_root)
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.shallow
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.shallow)
+False
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.stream
+-- Object type: <class 'werkzeug.wsgi.LimitedStream'>
+-- Callable? False
+
+print(flask.request.stream)
+<werkzeug.wsgi.LimitedStream object at 0x7f6cee067d90>
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.trusted_hosts
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(flask.request.trusted_hosts)
+None
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.url
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.url)
+http://127.0.0.1:7777/session
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.url_charset
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.url_charset)
+utf-8
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.url_root
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(flask.request.url_root)
+http://127.0.0.1:7777/
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.url_rule
+-- Object type: <class 'werkzeug.routing.Rule'>
+-- Callable? False
+
+print(flask.request.url_rule)
+/session
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.user_agent
+-- Object type: <class 'werkzeug.useragents.UserAgent'>
+-- Callable? False
+
+print(flask.request.user_agent)
+curl/7.68.0
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.values
+-- Object type: <class 'werkzeug.datastructures.CombinedMultiDict'>
+-- Callable? False
+
+print(flask.request.values)
+CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([('title', 'Hello')])])
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.view_args
+-- Object type: <class 'dict'>
+-- Callable? False
+
+print(flask.request.view_args)
+{}
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+flask.request.want_form_data_parsed
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(flask.request.want_form_data_parsed)
+True
+
+-------------------------------------------------------------------
+127.0.0.1 - - [11/Apr/2021 09:47:38] "POST /session HTTP/1.1" 200 -
+
+

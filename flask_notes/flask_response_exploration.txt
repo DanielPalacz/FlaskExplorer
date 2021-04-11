@@ -1,0 +1,583 @@
+(project_env) danielp@danielp-OptiPlex-790:~/PythonProjects/FlaskExplorer$ curl -u daniel:1234 -i -X POST --data "title=Hello" http://127.0.0.1:7777/session -vv
+
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:7777...
+* TCP_NODELAY set
+* Connected to 127.0.0.1 (127.0.0.1) port 7777 (#0)
+* Server auth using Basic with user 'daniel'
+> POST /session HTTP/1.1
+> Host: 127.0.0.1:7777
+> Authorization: Basic ZGFuaWVsOjEyMzQ=
+> User-Agent: curl/7.68.0
+> Accept: */*
+> Content-Length: 11
+> Content-Type: application/x-www-form-urlencoded
+> 
+* upload completely sent off: 11 out of 11 bytes
+* Mark bundle as not supporting multiuse
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+HTTP/1.0 200 OK
+< Content-Type: application/json
+Content-Type: application/json
+< Content-Length: 18
+Content-Length: 18
+< Vary: Cookie
+Vary: Cookie
+< Set-Cookie: session=eyJhX3ZhbHVlIjp7IiB1IjoiM2ZlOTNjODg3M2I0NDdiYzkwNWQ2Y2Y3NmE0Y2Q5MzIifX0.YHKq_Q.oNbEE_SgUkB7rXJAJazmiXlrALw; HttpOnly; Path=/
+Set-Cookie: session=eyJhX3ZhbHVlIjp7IiB1IjoiM2ZlOTNjODg3M2I0NDdiYzkwNWQ2Y2Y3NmE0Y2Q5MzIifX0.YHKq_Q.oNbEE_SgUkB7rXJAJazmiXlrALw; HttpOnly; Path=/
+< Server: Werkzeug/1.0.1 Python/3.8.5
+Server: Werkzeug/1.0.1 Python/3.8.5
+< Date: Sun, 11 Apr 2021 07:53:33 GMT
+Date: Sun, 11 Apr 2021 07:53:33 GMT
+
+< 
+"Session_created"
+* Closing connection 0
+
+
+--------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- 
+--------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- --------------- 
+
+
+-------------------------------------------------------------------
+response_obj.accept_ranges
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.accept_ranges)
+None
+
+-------------------------------------------------------------------
+response_obj.access_control_allow_credentials
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.access_control_allow_credentials)
+False
+
+-------------------------------------------------------------------
+response_obj.access_control_allow_headers
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.access_control_allow_headers)
+None
+
+-------------------------------------------------------------------
+response_obj.access_control_allow_methods
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.access_control_allow_methods)
+None
+
+-------------------------------------------------------------------
+response_obj.access_control_allow_origin
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.access_control_allow_origin)
+None
+
+-------------------------------------------------------------------
+response_obj.access_control_expose_headers
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.access_control_expose_headers)
+None
+
+-------------------------------------------------------------------
+response_obj.access_control_max_age
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.access_control_max_age)
+None
+
+-------------------------------------------------------------------
+response_obj.add_etag
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.add_etag():
+
+-------------------------------------------------------------------
+response_obj.age
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.age)
+None
+
+-------------------------------------------------------------------
+response_obj.allow
+-- Object type: <class 'werkzeug.datastructures.HeaderSet'>
+-- Callable? False
+
+print(response_obj.allow)
+
+
+-------------------------------------------------------------------
+response_obj.autocorrect_location_header
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.autocorrect_location_header)
+True
+
+-------------------------------------------------------------------
+response_obj.automatically_set_content_length
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.automatically_set_content_length)
+True
+
+-------------------------------------------------------------------
+response_obj.cache_control
+-- Object type: <class 'werkzeug.datastructures.ResponseCacheControl'>
+-- Callable? False
+
+print(response_obj.cache_control)
+
+
+-------------------------------------------------------------------
+response_obj.calculate_content_length
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.calculate_content_length():
+
+-------------------------------------------------------------------
+response_obj.call_on_close
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.call_on_close():
+The given command was not called:  response_obj.call_on_close
+
+-------------------------------------------------------------------
+response_obj.charset
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(response_obj.charset)
+utf-8
+
+-------------------------------------------------------------------
+response_obj.close
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.close():
+
+-------------------------------------------------------------------
+response_obj.content_encoding
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_encoding)
+None
+
+-------------------------------------------------------------------
+response_obj.content_language
+-- Object type: <class 'werkzeug.datastructures.HeaderSet'>
+-- Callable? False
+
+print(response_obj.content_language)
+
+
+-------------------------------------------------------------------
+response_obj.content_length
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_length)
+None
+
+-------------------------------------------------------------------
+response_obj.content_location
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_location)
+None
+
+-------------------------------------------------------------------
+response_obj.content_md5
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_md5)
+None
+
+-------------------------------------------------------------------
+response_obj.content_range
+-- Object type: <class 'werkzeug.datastructures.ContentRange'>
+-- Callable? False
+
+print(response_obj.content_range)
+
+
+-------------------------------------------------------------------
+response_obj.content_security_policy
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_security_policy)
+None
+
+-------------------------------------------------------------------
+response_obj.content_security_policy_report_only
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.content_security_policy_report_only)
+None
+
+-------------------------------------------------------------------
+response_obj.content_type
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(response_obj.content_type)
+text/html; charset=utf-8
+
+-------------------------------------------------------------------
+response_obj.data
+-- Object type: <class 'bytes'>
+-- Callable? False
+
+print(response_obj.data)
+b''
+
+-------------------------------------------------------------------
+response_obj.date
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.date)
+None
+
+-------------------------------------------------------------------
+response_obj.default_mimetype
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(response_obj.default_mimetype)
+text/html
+
+-------------------------------------------------------------------
+response_obj.default_status
+-- Object type: <class 'int'>
+-- Callable? False
+
+print(response_obj.default_status)
+200
+
+-------------------------------------------------------------------
+response_obj.delete_cookie
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.delete_cookie():
+The given command was not called:  response_obj.delete_cookie
+
+-------------------------------------------------------------------
+response_obj.direct_passthrough
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.direct_passthrough)
+False
+
+-------------------------------------------------------------------
+response_obj.expires
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.expires)
+None
+
+-------------------------------------------------------------------
+response_obj.force_type
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.force_type():
+The given command was not called:  response_obj.force_type
+
+-------------------------------------------------------------------
+response_obj.freeze
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.freeze():
+
+-------------------------------------------------------------------
+response_obj.from_app
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.from_app():
+The given command was not called:  response_obj.from_app
+
+-------------------------------------------------------------------
+response_obj.get_app_iter
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_app_iter():
+The given command was not called:  response_obj.get_app_iter
+
+-------------------------------------------------------------------
+response_obj.get_data
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_data():
+
+-------------------------------------------------------------------
+response_obj.get_etag
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_etag():
+
+-------------------------------------------------------------------
+response_obj.get_json
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_json():
+
+-------------------------------------------------------------------
+response_obj.get_wsgi_headers
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_wsgi_headers():
+The given command was not called:  response_obj.get_wsgi_headers
+
+-------------------------------------------------------------------
+response_obj.get_wsgi_response
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.get_wsgi_response():
+The given command was not called:  response_obj.get_wsgi_response
+
+-------------------------------------------------------------------
+response_obj.headers
+-- Object type: <class 'werkzeug.datastructures.Headers'>
+-- Callable? False
+
+print(response_obj.headers)
+Content-Type: text/html; charset=utf-8
+ETag: "d41d8cd98f00b204e9800998ecf8427e"
+Content-Length: 0
+
+
+
+-------------------------------------------------------------------
+response_obj.implicit_sequence_conversion
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.implicit_sequence_conversion)
+True
+
+-------------------------------------------------------------------
+response_obj.is_json
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.is_json)
+False
+
+-------------------------------------------------------------------
+response_obj.is_sequence
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.is_sequence)
+True
+
+-------------------------------------------------------------------
+response_obj.is_streamed
+-- Object type: <class 'bool'>
+-- Callable? False
+
+print(response_obj.is_streamed)
+False
+
+-------------------------------------------------------------------
+response_obj.iter_encoded
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.iter_encoded():
+
+-------------------------------------------------------------------
+response_obj.json
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.json)
+None
+
+-------------------------------------------------------------------
+response_obj.json_module
+-- Object type: <class 'module'>
+-- Callable? False
+
+print(response_obj.json_module)
+<module 'flask.json' from '/home/danielp/PythonProjects/FlaskExplorer/project_env/lib/python3.8/site-packages/flask/json/__init__.py'>
+
+-------------------------------------------------------------------
+response_obj.last_modified
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.last_modified)
+None
+
+-------------------------------------------------------------------
+response_obj.location
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.location)
+None
+
+-------------------------------------------------------------------
+response_obj.make_conditional
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.make_conditional():
+The given command was not called:  response_obj.make_conditional
+
+-------------------------------------------------------------------
+response_obj.make_sequence
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.make_sequence():
+
+-------------------------------------------------------------------
+response_obj.max_cookie_size
+-- Object type: <class 'int'>
+-- Callable? False
+
+print(response_obj.max_cookie_size)
+4093
+
+-------------------------------------------------------------------
+response_obj.mimetype
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(response_obj.mimetype)
+text/html
+
+-------------------------------------------------------------------
+response_obj.mimetype_params
+-- Object type: <class 'werkzeug.datastructures.CallbackDict'>
+-- Callable? False
+
+print(response_obj.mimetype_params)
+<CallbackDict {'charset': 'utf-8'}>
+
+-------------------------------------------------------------------
+response_obj.on_json_loading_failed
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.on_json_loading_failed():
+The given command was not called:  response_obj.on_json_loading_failed
+
+-------------------------------------------------------------------
+response_obj.response
+-- Object type: <class 'list'>
+-- Callable? False
+
+print(response_obj.response)
+[]
+
+-------------------------------------------------------------------
+response_obj.retry_after
+-- Object type: <class 'NoneType'>
+-- Callable? False
+
+print(response_obj.retry_after)
+None
+
+-------------------------------------------------------------------
+response_obj.set_cookie
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.set_cookie():
+The given command was not called:  response_obj.set_cookie
+
+-------------------------------------------------------------------
+response_obj.set_data
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.set_data():
+The given command was not called:  response_obj.set_data
+
+-------------------------------------------------------------------
+response_obj.set_etag
+-- Object type: <class 'method'>
+-- Callable? True
+
+response_obj.set_etag():
+The given command was not called:  response_obj.set_etag
+
+-------------------------------------------------------------------
+response_obj.status
+-- Object type: <class 'str'>
+-- Callable? False
+
+print(response_obj.status)
+200 OK
+
+-------------------------------------------------------------------
+response_obj.status_code
+-- Object type: <class 'int'>
+-- Callable? False
+
+print(response_obj.status_code)
+200
+
+-------------------------------------------------------------------
+response_obj.stream
+-- Object type: <class 'werkzeug.wrappers.response.ResponseStream'>
+-- Callable? False
+
+print(response_obj.stream)
+<werkzeug.wrappers.response.ResponseStream object at 0x7f4c3353cd30>
+
+-------------------------------------------------------------------
+response_obj.vary
+-- Object type: <class 'werkzeug.datastructures.HeaderSet'>
+-- Callable? False
+
+print(response_obj.vary)
+
+
+-------------------------------------------------------------------
+response_obj.www_authenticate
+-- Object type: <class 'werkzeug.datastructures.WWWAuthenticate'>
+-- Callable? False
+
+print(response_obj.www_authenticate)
+Basic 
+
+-------------------------------------------------------------------
+127.0.0.1 - - [11/Apr/2021 09:53:33] "POST /session HTTP/1.1" 200 -
